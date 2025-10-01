@@ -42,7 +42,7 @@ const addProduct = async (req, res) => {
       price: Number(price),
       bestseller: bestseller === "true" ? true : false,
       sizes: JSON.parse(sizes), // Ensure sizes are parsed
-      images: imageURLs,
+      image: imageURLs,
       date: Date.now(), // Corrected key name
     };
 
